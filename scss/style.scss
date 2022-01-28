@@ -43,8 +43,18 @@ small {
 	color: #0B182B;
 }
 
+.navbar-brand {
+	font-family: Montserrat;
+}
+
 .intro {
 	font-family: Montserrat;
+}
+
+@media (max-width: 767.98px) {
+	.intro {
+		font-size: 3rem;
+	}
 }
 
 // Color system
