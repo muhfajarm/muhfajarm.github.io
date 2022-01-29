@@ -12,6 +12,10 @@ $font-family-sans-serif: Montserrat,
 Arimo;
 $text-muted: #50749A !default;
 
+body {
+	overflow-x: hidden;
+}
+
 section {
 	padding: 1.5rem;
 }

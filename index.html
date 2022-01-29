@@ -6,10 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Muhammad Fajar Maqidi</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/css/style.min.css">
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Fontawesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
@@ -18,17 +21,17 @@
 	<!-- Navbar -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
 		<div class="container">
-			<a class="navbar-brand" href="#">MqD</a>
+			<a class="navbar-brand" href="#intro">MqD</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 				<div class="navbar-nav fw-bold">
 					<a class="nav-link" href="#intro">Home</a>
-					<a class="nav-link" href="#">About</a>
-					<a class="nav-link" href="#">Skill</a>
-					<a class="nav-link" href="#">Portfolio</a>
-					<a class="btn btn-primary" href="#">Contact</a>
+					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#skill">Skill</a>
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+					<a class="btn btn-primary" href="#contact">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -50,10 +53,10 @@
 						<span class="mx-1"><i class="fab fa-instagram" style="font-size: 24px; color: #0284B3;"></i></span>
 						<span class="mx-1"><i class="fab fa-github" style="font-size: 24px; color: #0284B3;"></i></span>
 						<br>
-						<a href="#contact" class="btn btn-primary mt-2">Kontak</a>
+						<a href="#contact" class="btn btn-primary mt-2" data-aos="fade-right" data-aos-duration="1000">Kontak</a>
 					</div>
 				</div>
-				<div class="col-md-3 d-none d-md-block">
+				<div class="col-md-3 d-none d-md-block" data-aos="fade-left" data-aos-duration="1000">
 					<img class="img-fluid" src="./assets/img/photo-profile.png" alt="Muhammad Fajar Maqidi">
 				</div>
 			</div>
@@ -67,7 +70,7 @@
 		<div class="container">
 			<div class="text-center">
 				<h3 class="fw-bold">About Me</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta fugiat, minus placeat delectus tempora similique aperiam dignissimos? Corrupti eos hic obcaecati delectus. Deserunt, ea quam quos ad culpa laudantium?</p>
+				<p data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta fugiat, minus placeat delectus tempora similique aperiam dignissimos? Corrupti eos hic obcaecati delectus. Deserunt, ea quam quos ad culpa laudantium?</p>
 			</div>
 		</div>
 
@@ -78,12 +81,12 @@
 	<section id="skills" class="bg-secondary">
 		<h3 class="fw-bold text-center">My Skills</h3>
 		<div class="row text-center">
-			<div class="col-md">
+			<div class="col-md" data-aos="fade-right" data-aos-duration="1000">
 				<span><i class="far fa-clone mb-2" style="font-size: 100px; color: #0284B3;"></i></span>
 				<h6 class="fw-bold">UI/UX Design</h6>
 				<p class="pb-3">Figma</p>
 			</div>
-			<div class="col-md">
+			<div class="col-md" data-aos="fade-left" data-aos-duration="1000">
 				<span><i class="fas fa-code" style="font-size: 100px; color: #0284B3;"></i></span>
 				<h6 class="fw-bold">Programming</h6>
 				<p class="pb-3">HTML, CSS, PHP, Codeigniter, Laravel</p>
@@ -96,10 +99,12 @@
 	<section id="portfolio">
 		<div class="container text-center">
 			<h3 class="fw-bold mb-3">My Portfolio</h3>
-			<img src="./assets/img/bpmi-sdg.png" alt="Portfolio BPMI-SDG" class="img-fluid rounded w-75">
-			<div class="d-none d-md-block">
-				<h4 class="fw-bold">BPMI - Stikes Duta Gama Klaten</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt deleniti atque tenetur obcaecati perferendis. Ut error magnam nisi laboriosam ipsam quidem dicta reiciendis consectetur facilis, perferendis eaque dolores unde.</p>
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+				<img src="./assets/img/bpmi-sdg.webp" alt="Portfolio BPMI-SDG" class="img-fluid rounded w-50">
+				<div class="d-none d-md-block">
+					<h4 class="fw-bold">BPMI - Stikes Duta Gama Klaten</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt deleniti atque tenetur obcaecati perferendis. Ut error magnam nisi laboriosam ipsam quidem dicta reiciendis consectetur facilis, perferendis eaque dolores unde.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -115,20 +120,20 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 			<form>
-				<div class="form-floating mb-3">
+				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
 					<input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap">
 					<label for="floatingName">Nama Lengkap</label>
 				</div>
-				<div class="form-floating mb-3">
+				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
 					<input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
 					<label for="floatingEmail">Email</label>
 				</div>
-				<div class="form-floating mb-3">
+				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
 					<textarea id="floatingMessage" class="form-control" placeholder="Pesan" style="height: 100px;"></textarea>
 					<label for="floatingMessage">Pesan</label>
 				</div>
 
-				<div class="text-center">
+				<div class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
 					<a href="#" class="btn btn-primary">Kirim</a>
 				</div>
 			</form>
@@ -151,5 +156,9 @@
 
 	<!-- Script -->
 	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- AOS Script -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 </html>
