@@ -124,22 +124,22 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
-			<form>
+			<form name="form-contact">
 				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-					<input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap">
+					<input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap" name="fullname">
 					<label for="floatingName">Nama Lengkap</label>
 				</div>
 				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-					<input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+					<input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email">
 					<label for="floatingEmail">Email</label>
 				</div>
 				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-					<textarea id="floatingMessage" class="form-control" placeholder="Pesan" style="height: 100px;"></textarea>
+					<textarea id="floatingMessage" class="form-control" placeholder="Pesan" name="message" style="height: 100px;"></textarea>
 					<label for="floatingMessage">Pesan</label>
 				</div>
 
 				<div class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-					<a href="#" class="btn btn-primary">Kirim</a>
+					<button type="submit" class="btn btn-primary">Kirim</button>
 				</div>
 			</form>
 			</div>
@@ -176,5 +176,18 @@
 	<!-- AOS Script -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
+
+	<!-- Form to GSheet Script -->
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbzGQsuHR4_EERyLSeZFHkBfZER5UQo2PSSkwKjfcZCXPalo84n_42Abq3LdUHetLbIxGA/exec'
+		const form = document.forms['form-contact']
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => console.log('Success!', response))
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
 </body>
 </html>
