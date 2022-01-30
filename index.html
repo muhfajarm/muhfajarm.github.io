@@ -139,7 +139,11 @@
 				</div>
 
 				<div class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
-					<button type="submit" class="btn btn-primary">Kirim</button>
+					<button type="submit" class="btn btn-primary btn-sending">Kirim</button>
+					<button class="btn btn-primary btn-sending" style="display: none" type="button" disabled>
+						<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+						Mengirim...
+					</button>
 				</div>
 			</form>
 			</div>
@@ -170,12 +174,18 @@
 	</section>
 	<!-- End Footer -->
 
-	<!-- Script -->
+	<!-- BS Script -->
 	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- JQuery Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<!-- AOS Script -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
+
+	<!-- SweetAlert2 Script -->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<!-- Form to GSheet Script -->
 	<script>
@@ -184,9 +194,36 @@
 
 		form.addEventListener('submit', e => {
 			e.preventDefault()
+
+			$(".btn-sending").toggle()
+
 			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => console.log('Success!', response))
-				.catch(error => console.error('Error!', error.message))
+				.then(response => {
+					$(".btn-sending").toggle()
+
+					Swal.fire({
+						title: 'Berhasil!',
+						html: 'Pesan anda terkirim!',
+						icon: 'success',
+						timer: 1500,
+						showConfirmButton: false,
+					})
+
+					form.reset();
+				})
+				.catch(error => {
+					$(".btn-sending").toggle()
+
+					Swal.fire({
+						title: 'Gagal!',
+						html: 'Pesan anda tidak terkirim!',
+						icon: 'error',
+						timer: 2000,
+						showConfirmButton: false,
+					})
+
+					console.error('Error!', error.message)
+				})
 		})
 	</script>
 </body>
