@@ -3,13 +3,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 // custom variables
-
+$font-family-sans-serif: Montserrat,
+Arimo;
 $enable-negative-margins: true;
 $primary: #9ED5E5;
 $secondary: #D3E6F2;
 $navbar-light-toggler-border-color: transparent;
-$font-family-sans-serif: Montserrat,
-Arimo;
+$navbar-light-color: #0B182B;
+$navbar-light-active-color: #000000;
+$navbar-light-brand-color: #132232;
 $text-muted: #50749A !default;
 
 body {
@@ -17,6 +19,7 @@ body {
 }
 
 section {
+	scroll-margin-top: 3.5rem !important;
 	padding: 1.5rem;
 }
 
@@ -54,6 +57,18 @@ small {
 .intro {
 	font-family: Montserrat;
 	font-size: 2.5rem;
+}
+
+.btn-outline-primary {
+	color: #132232 !important;
+	border-color: #132232 !important;
+	font-weight: 700 !important;
+}
+
+.btn-outline-primary:hover {
+	color: $navbar-light-color !important;
+	border-color: $primary !important;
+	background-color: $secondary !important;
 }
 
 @media (min-width: 768px) {
