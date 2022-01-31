@@ -32,6 +32,89 @@ h5 {
 	color: #0B182B;
 }
 
+.title {
+	font-family: Arimo;
+	color: #0B182B;
+}
+
+.portfolio {
+	display: block;
+	flex-basis: 0;
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 0.75rem;
+}
+
+.portfolio .overlay,
+.portfolio figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: .45s ease-in-out;
+	transition: .45s ease-in-out;
+}
+
+.portfolio .overlay {
+	background-color: $primary;
+}
+
+.portfolio figure:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.portfolio figure {
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.portfolio figure figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: .45s ease-in-out;
+	transition: .45s ease-in-out;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	justify-content: center;
+	padding: 0rem 1rem;
+	color: #fff;
+	z-index: 1;
+}
+
+.portfolio figure figcaption .title {
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	.portfolio figure figcaption {
+		padding: 0rem 2rem;
+	}
+
+	.portfolio figure figcaption .title {
+		font-size: 1.75rem;
+	}
+}
+
+.portfolio figure:hover .overlay,
+.portfolio figure:hover figcaption {
+	opacity: 0.85;
+}
+
 .display-1,
 .display-2,
 .display-3,
@@ -48,6 +131,10 @@ label,
 small {
 	font-family: Arimo;
 	color: #0B182B;
+}
+
+a:hover {
+	color: #fff !important;
 }
 
 .navbar-brand {
@@ -74,11 +161,6 @@ small {
 @media (min-width: 768px) {
 	.intro {
 		font-size: 3rem;
-	}
-
-	.img-md {
-		max-width: 50% !important;
-		height: auto;
 	}
 }
 
