@@ -155,9 +155,145 @@ a:hover {
 	background-color: $secondary !important;
 }
 
+.btn-dark {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	top: 70px;
+	margin-right: 0.5rem;
+	background-color: #022337;
+	color: #9ED5E5;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 1000;
+
+	i {
+		font-size: 20px;
+		margin-top: 5px;
+	}
+}
+
+.btn-dark:hover {
+	color: #9ED5E5 !important;
+
+	i {
+		opacity: 0.5;
+	}
+}
+
+.btn-light {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	top: 70px;
+	margin-right: 0.5rem;
+	background-color: #9ED5E5;
+	color: #022337;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 1000;
+
+	i {
+		font-size: 20px;
+		margin-top: 5px;
+	}
+}
+
+.btn-light:hover {
+	color: #022337 !important;
+
+	i {
+		opacity: 0.5;
+	}
+}
+
+.btn-top {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 30px;
+	margin-right: 0.5rem;
+	background-color: #9ED5E5;
+	color: #132232;
+	border-radius: 50px;
+	text-align: center;
+	z-index: 1000;
+
+	i {
+		font-size: 35px;
+		margin-top: 5px;
+	}
+}
+
+.btn-top:hover {
+	color: #132232 !important;
+
+	i {
+		opacity: 0.5;
+	}
+}
+
 @media (min-width: 768px) {
 	.intro {
 		font-size: 3rem;
+	}
+
+	.btn-dark {
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		top: 70px;
+		margin-right: 1rem;
+		background-color: #022337;
+		color: #9ED5E5;
+		border-radius: 50px;
+		text-align: center;
+		box-shadow: 2px 2px 3px #999;
+		z-index: 1000;
+
+		i {
+			font-size: 25px;
+			margin-top: 8px;
+		}
+	}
+
+	.btn-light {
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		top: 70px;
+		margin-right: 1rem;
+		background-color: #9ED5E5;
+		color: #022337;
+		border-radius: 50px;
+		text-align: center;
+		box-shadow: 2px 2px 3px #999;
+		z-index: 1000;
+
+		i {
+			font-size: 25px;
+			margin-top: 8px;
+		}
+	}
+
+	.btn-top {
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		bottom: 30px;
+		margin-right: 0.5rem;
+		background-color: #9ED5E5;
+		color: #132232;
+		border-radius: 50px;
+		text-align: center;
+		z-index: 1000;
+
+		i {
+			font-size: 40px;
+			margin-top: 8px;
+		}
 	}
 }
 
