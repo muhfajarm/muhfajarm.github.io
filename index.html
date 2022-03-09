@@ -318,8 +318,8 @@
 				if (entry.isIntersecting) {
 					const imgElement = entry.target.querySelector('img')
 					const realSrc = imgElement.dataset.src;
-					imgElement.setAttribute('src', realSrc)
 					imgElement.style.filter = 'blur(0px)'
+					imgElement.setAttribute('src', realSrc)
 				}
 			})
 		}
