@@ -1,0 +1,43 @@
+{
+	"name": "Muhammad Fajar MaQidi",
+	"job": "Web Developer",
+	"social": {
+		"twitter": "https://twitter.com/muhfajarm96",
+		"instagram": "https://www.instagram.com/muhfajarm/",
+		"github": "https://github.com/muhfajarm"
+	},
+	"about": {
+		"me": "Hallo, you can call me Fajar, i'm an Informatics Management graduate with proficient back-end web development. I passionate about coding and new technology in every way.",
+		"hoby": [
+			"coding",
+			"gaming",
+			"badminton"
+		],
+		"img": "photo-profile.webp"
+	},
+	"skils": {
+		"uiux": "Figma",
+		"programming": [
+			"HTML",
+			"CSS",
+			"PHP",
+			"CodeIgniter",
+			"Laravel"
+		]
+	},
+	"portfolio": {
+		"bpmi": {
+			"name": "BPMI - Stikes Duta Gama Klaten",
+			"description": "Is an agency responsible for ensuring the quality of higher education.",
+			"technology": [
+				"CodeIgniter 3",
+				"Bootstrap 4.5.3"
+			],
+			"url" : "https://bpmi.stikesdutagama.ac.id/",
+			"img": {
+				"thumb": "thumb-bpmi-sdg.png",
+				"ori": "bpmi-sdg-png"
+			}
+		}
+	}
+}
