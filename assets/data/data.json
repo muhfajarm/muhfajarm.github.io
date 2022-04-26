@@ -1,5 +1,5 @@
 {
-	"name": "Muhammad Fajar MaQidi",
+	"name": "Muhammad Fajar MaqiDi",
 	"job": "Web Developer",
 	"social": {
 		"twitter": "https://twitter.com/muhfajarm96",
@@ -15,7 +15,7 @@
 		],
 		"img": "photo-profile.webp"
 	},
-	"skils": {
+	"skills": {
 		"uiux": "Figma",
 		"programming": [
 			"HTML",
@@ -36,7 +36,7 @@
 			"url" : "https://bpmi.stikesdutagama.ac.id/",
 			"img": {
 				"thumb": "thumb-bpmi-sdg.png",
-				"ori": "bpmi-sdg-png"
+				"ori": "bpmi-sdg.png"
 			}
 		}
 	}
