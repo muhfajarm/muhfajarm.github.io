@@ -2,6 +2,7 @@
 	"name": "Muhammad Fajar MaqiDi",
 	"job": "Web Developer",
 	"social": {
+		"linkedin": "https://www.linkedin.com/in/muhfajarm",
 		"twitter": "https://twitter.com/muhfajarm96",
 		"instagram": "https://www.instagram.com/muhfajarm/",
 		"github": "https://github.com/muhfajarm"
@@ -26,6 +27,20 @@
 		]
 	},
 	"portfolio": {
+		"file-manager-lpmi": {
+			"name": "FileManager LPMI - STIKes Guna Bangsa Yogyakarta",
+			"description": "File Manager that is intended to hold files from a quality assurance agency.",
+			"technology": [
+				"Laravel 8",
+				"Laravel File Manager",
+				"Tailwind"
+			],
+			"url": "https://lpmi.gunabangsa.ac.id/fm/filemanager",
+			"img": {
+				"thumb": "thumb-lpmi-gb.png",
+				"ori": "lpmi-gb.png"
+			}
+		},
 		"bpmi": {
 			"name": "BPMI - Stikes Duta Gama Klaten",
 			"description": "Is an agency responsible for ensuring the quality of higher education.",
@@ -33,7 +48,7 @@
 				"CodeIgniter 3",
 				"Bootstrap 4.5.3"
 			],
-			"url" : "https://bpmi.stikesdutagama.ac.id/",
+			"url": "https://bpmi.stikesdutagama.ac.id/",
 			"img": {
 				"thumb": "thumb-bpmi-sdg.png",
 				"ori": "bpmi-sdg.png"

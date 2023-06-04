@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-color-mode="">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +15,18 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Fontawesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous">
 </head>
+
 <body id="intro">
 	<!-- Navbar -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
 		<div class="container">
 			<a class="navbar-brand" href="#intro">MqD</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -73,7 +78,8 @@
 			<h3 class="fw-bold">About Me</h3>
 			<div class="row justify-content-center">
 				<div class="col-md-6 d-none d-md-block">
-					<p class="fs-5 about-me" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"></p>
+					<p class="fs-5 about-me" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+					</p>
 				</div>
 				<div class="d-md-none">
 					<p class="about-me-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"></p>
@@ -106,15 +112,8 @@
 	<section id="portfolio">
 		<div class="container text-center">
 			<h3 class="fw-bold mb-3">My Portfolio</h3>
-			<div class="row justify-content-center">
-				<div class="col-md-6">
-					<div class="portfolio">
-						
-					</div>
-					<div class="d-none d-md-block">
-						<h4 class="fw-bold">BPMI - Stikes Duta Gama Klaten</h4>
-						<p class="fs-5">Is an agency responsible for ensuring the quality of higher education.</p>
-					</div>
+			<div class="row justify-content-between">
+				<div class="portfolio row">
 				</div>
 			</div>
 		</div>
@@ -130,30 +129,31 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
-			<form name="form-contact">
-				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000">
-					<input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap" name="fullname">
-					<label for="floatingName">Fullname</label>
-				</div>
-				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-					<input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email">
-					<label for="floatingEmail">Email</label>
-				</div>
-				<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-					<textarea id="floatingMessage" class="form-control" placeholder="Pesan" name="message" style="height: 100px;"></textarea>
-					<label for="floatingMessage">Message</label>
-				</div>
+					<form name="form-contact">
+						<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000">
+							<input type="text" class="form-control" id="floatingName" placeholder="Nama Lengkap" name="fullname">
+							<label for="floatingName">Fullname</label>
+						</div>
+						<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+							<input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email">
+							<label for="floatingEmail">Email</label>
+						</div>
+						<div class="form-floating mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+							<textarea id="floatingMessage" class="form-control" placeholder="Pesan" name="message"
+								style="height: 100px;"></textarea>
+							<label for="floatingMessage">Message</label>
+						</div>
 
-				<div class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
-					<button type="submit" class="btn btn-primary btn-sending">Send</button>
-					<button class="btn btn-primary btn-sending" style="display: none" type="button" disabled>
-						<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-						Sending...
-					</button>
+						<div class="text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+							<button type="submit" class="btn btn-primary btn-sending">Send</button>
+							<button class="btn btn-primary btn-sending" style="display: none" type="button" disabled>
+								<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+								Sending...
+							</button>
+						</div>
+					</form>
 				</div>
-			</form>
 			</div>
-		</div>
 	</section>
 	<!-- End Contact -->
 
@@ -194,7 +194,7 @@
 
 			$(".btn-sending").toggle()
 
-			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then(response => {
 					$(".btn-sending").toggle()
 
@@ -245,4 +245,5 @@
 	<!-- AJAX Data JSON -->
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>
